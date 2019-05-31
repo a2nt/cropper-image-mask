@@ -28,14 +28,24 @@ yarn build
 
 ## Directory structure
 src/ - your sources
+
 -- src/app.scss - specific app style
+
 -- src/_events.js - app events definitions
+
 -- src/_ui.spinner.js - spinner example
+
 -- src/_ui.form.croppie.scss - cropper-image-mask field style
+
 -- src/_ui.form.croppie.js - cropper-image-mask field js
+
 -- src/index.html - HTML example
+
 -- src/img - some example images 
+
 -- src/upload.php - example of server-side processing
 
+
 dist/ - compiled scipts after "yarn build"
+
 You can open dist/index.html to see demo
