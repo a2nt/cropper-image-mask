@@ -58,7 +58,7 @@ const CroppieUI = (($) => {
       });
 
       // actions
-      ui.$el.append('<a href="/" class="btn act-crop">Обрезать</a>');
+      ui.$el.append('<a href="/" class="btn act-crop">Crop it</a>');
 
       // crop
       ui.$el.find('.act-crop').on('click', (e) => {
@@ -169,7 +169,7 @@ const CroppieUI = (($) => {
       ui.masks[id] = mask;
 
       // draw removable button
-      let $btn = $('<a class="remove-mask" href="#" data-id="' + id + '">Удалить #' + id + '</a>');
+      let $btn = $('<a class="remove-mask" href="#" data-id="' + id + '">Delete mask #' + id + '</a>');
       ui.$el.find('.masks').append($btn);
 
       /*ui.$removeBtns.prepend($btn);
