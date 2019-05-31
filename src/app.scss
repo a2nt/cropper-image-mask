@@ -1,0 +1,109 @@
+// reset style
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dedede;
+}
+
+fieldset {
+    border: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+// main styling
+.wrapper {
+    position: relative;
+    width: 90%;
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+    background: #fff;
+    border: 1px solid red;
+}
+
+.btn {
+    display: inline-block;
+    padding: .5rem 1rem;
+    border: 1px #dedede;
+    background: #888;
+    color: #000;
+    text-decoration: none;
+
+    &:hover,
+    &:focus {
+        opacity: .8;
+    }
+}
+
+// field styling
+@import "./_ui.form.croppie.scss";
+
+.field {
+    position: relative;
+    margin: 2rem 0;
+
+    &.croppie {
+        position: relative;
+        height: 480px;
+
+        .act-crop,
+        .cropping-image,
+        .masks,
+        .mask-canvas {
+            display: none;
+        }
+
+        .cropper-face {
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+        .masks {
+            h2 {
+                clear: both;
+            }
+
+            .mask-item {
+                width: 30%;
+                float: left;
+            }
+
+            &:before,
+            &:after {
+                content: '';
+                clear: both;
+            }
+        }
+
+        &.jsCroppieUI-cropping {
+            .left,
+            .right,
+            .middle-column {
+                display: none;
+            }
+
+            .act-crop {
+                display: inline-block;
+            }
+        }
+
+        &.jsCroppieUI-cropped {
+            .left,
+            .right,
+            .middle-column {
+                display: none;
+            }
+
+            .masks,
+            .act-place {
+                display: block;
+            }
+        }
+
+        .remove-mask {
+            position: absolute;
+        }
+    }
+}
