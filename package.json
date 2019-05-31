@@ -1,10 +1,10 @@
 {
-    "name": "ss-webpack-boilerplate",
+    "name": "cropper-image-mask",
     "version": "1.0.0",
-    "description": "Lets you create SilverStripe faster",
+    "description": "Allows to crop image, cover some image areas with another images, merge them and send resulted image to the server",
     "author": "Tony Air <tony@twma.pro>",
     "license": "MIT",
-    "private": true,
+    "private": false,
     "engines": {
         "yarn": ">= 1.0.0"
     },
